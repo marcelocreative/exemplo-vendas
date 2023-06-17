@@ -1,0 +1,9 @@
+package br.com.mgsystems.dao;
+
+import br.com.mgsystems.domain.Cliente;
+
+public class ClienteDAOMock implements IClienteDAO {
+
+	
+
+}

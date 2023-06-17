@@ -1,0 +1,28 @@
+package br.com.mgsystems.services;
+
+import br.com.mgsystems.dao.IClienteDAO;
+import br.com.mgsystems.domain.Cliente;
+
+public class ClienteService implements IClienteService {
+	
+	private IClienteDAO clienteDAO;
+	
+	
+
+	public ClienteService() {
+		clienteDAO = new ClienteDAO();
+	}
+
+	@Override
+	public void salvar(Cliente cliente) {
+		
+
+	}
+
+	@Override
+	public Cliente buscarPorCPF(Long cpf) {
+		
+		return null;
+	}
+
+}

@@ -1,0 +1,34 @@
+package br.com.mgsystems.dao;
+
+import br.com.mgsystems.dao.generics.GenericDAO;
+import br.com.mgsystems.domain.Cliente;
+
+public class ClienteDAO extends GenericDAO<Cliente> implements IClienteDAO {
+
+	@Override
+	public Boolean salvar(Cliente cliente) {
+		
+		return true;
+		
+	}
+	
+	public Cliente buscarPorCPF(Long cpf) {
+		
+		return null;
+	}
+
+	@Override
+	public void excluir(Long cpf) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void alterar(Cliente cliente) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+}

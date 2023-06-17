@@ -1,0 +1,16 @@
+package br.com.mgsystems;
+
+import org.junit.Test;
+
+import br.com.mgsystems.domain.Cliente;
+
+public class ClienteDAOTest {
+	
+	private Cliente cliente;
+	
+	@Test
+	public void pesquisarCliente() {
+		
+	}
+
+}

@@ -1,0 +1,46 @@
+package br.com.mgsystems;
+
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
+import br.com.mgsystems.dao.ClienteDAOMock;
+import br.com.mgsystems.dao.IClienteDAO;
+import br.com.mgsystems.domain.Cliente;
+
+public class ClienteDAOTest {
+	
+	private IClienteDAO clienteDAO;
+	private Cliente cliente;
+	
+	
+	
+	public ClienteDAOTest() {
+		clienteDAO = new ClienteDAOMock();
+	}
+
+	@Before
+	public void init() {
+		
+		cliente = new Cliente();
+		cliente.setCpf(14789632555L);
+		cliente.setNome("Rodrigo");
+		cliente.setCidade("São Paulo");
+		cliente.setEnd("End");
+		cliente.setEstado("SP");
+		cliente.setNumero(10);
+		cliente.setTel(99668875L);
+		
+		clienteDAO.salvar(cliente);
+	}
+
+	@Test
+	public void pesquisarCliente() {
+		
+		Cliente clienteConsultado = clienteDAO.buscarPorCPF(cliente.getCpf());
+		
+		Assert.assertNotNull(clienteConsultado);
+		
+	}
+
+}

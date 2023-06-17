@@ -1,0 +1,13 @@
+package br.com.mgsystems.dao;
+
+import br.com.mgsystems.domain.Cliente;
+
+public class ClienteDAOMock implements IClienteDAO {
+
+	@Override
+	public void salvar(Cliente cliente) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

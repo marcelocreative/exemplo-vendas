@@ -1,0 +1,42 @@
+package br.com.mgsystems;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+import br.com.mgsystems.domain.Cliente;
+import br.com.mgsystems.services.IClienteService;
+
+public class ClienteTest {
+	
+	private IClienteService clienteService;
+	
+	
+	
+	public ClienteTest() {
+	
+		clienteService = new ClienteService;
+	}
+
+
+
+	@Test
+	public void pesquisarCliente() {
+		
+		Cliente cliente = new Cliente();
+		cliente.setCpf(14789632555L);
+		cliente.setNome("Rodrigo");
+		cliente.setCidade("São Paulo");
+		cliente.setEnd("End");
+		cliente.setEstado("SP");
+		cliente.setNumero(10);
+		cliente.setTel(99668875L);
+		
+		clienteService.salvar(cliente);
+		
+		Cliente clienteConsultado = clienteService.buscarPorCPF(cliente.getCpf());
+		
+		Assert.assertNotNull(clienteConsultado);
+		
+	}
+
+}

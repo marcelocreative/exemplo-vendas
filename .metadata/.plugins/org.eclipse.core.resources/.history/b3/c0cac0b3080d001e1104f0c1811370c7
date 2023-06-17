@@ -1,0 +1,14 @@
+package br.com.mgsystems;
+
+import org.junit.Test;
+
+public class ClienteTest {
+	
+	@Test
+	public void pesquisarCliente() {
+		
+		Cliente cliente = new Cliente();
+		
+	}
+
+}

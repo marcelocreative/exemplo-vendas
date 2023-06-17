@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.junit.Test"/>
+    <fullyQualifiedTypeName name="org.junit.Assert"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Constructor"/>
+    <fullyQualifiedTypeName name="org.junit.Before"/>
+    <fullyQualifiedTypeName name="br.com.mgsystems.dao.IClienteDAO"/>
+    <fullyQualifiedTypeName name="br.com.mgsystems.dao.ClienteDAO"/>
+    <fullyQualifiedTypeName name="br.com.mgsystems.dao.ClienteDAOMock"/>
+    <fullyQualifiedTypeName name="br.com.mgsystems.exceptions.TipoChaveNaoEncontradaException"/>
+    <fullyQualifiedTypeName name="br.com.mgsystems.anotacao.TipoChave"/>
+    <fullyQualifiedTypeName name="br.com.mgsystems.dao.generics.GenericDAO"/>
+    <fullyQualifiedTypeName name="br.com.mgsystems.dao.generics.IGenericDAO"/>
+    <fullyQualifiedTypeName name="br.com.mgsystems.domain.Persistente"/>
+</qualifiedTypeNameHistroy>

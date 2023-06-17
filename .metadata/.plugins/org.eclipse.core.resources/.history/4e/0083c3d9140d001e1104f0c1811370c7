@@ -1,0 +1,11 @@
+package br.com.mgsystems.dao;
+
+import br.com.mgsystems.domain.Cliente;
+
+public interface IClienteDAO {
+
+	void salvar(Cliente cliente);
+	
+	Cliente buscarPorCPF(Long cpf);
+
+}
